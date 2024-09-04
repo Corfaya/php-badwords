@@ -10,12 +10,11 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <form action="" method="GET">
+                <form action="./badwords.php" method="GET">
                     <div class="row">
                         <div class="col-12">
                             <div class="form-floating">
-                                <label for="paragaph">Scrivere qualcosa qui</label>
-                                <textarea class="form-control" name="paragrafo"  id="paragaph"></textarea>
+                                <textarea class="form-control p-2" name="paragrafo"></textarea>
                             </div>
                         </div>
                         <div class="col-6 my-3">
