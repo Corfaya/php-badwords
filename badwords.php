@@ -23,10 +23,10 @@
         <div class="row">
             <div class="col-12">
                 <h3>Il tuo testo:</h3>
-                <em class="mt-2"></em>
+                <em class="mt-2"><?php echo $paragrafo ?></em>
             </div>
             <div class="col-12">
-                <h3 class="fs-4 mt-4">La lunghezza del tuo testo è pari a: <span class="fs-5 fw-bold d-inline text-danger"></span></h3>
+                <h3 class="fs-4 mt-4">La lunghezza del tuo testo è pari a: <span class="fs-5 fw-bold d-inline text-danger"><?php echo $length ?></span></h3>
             </div>
         </div>
     </div>
