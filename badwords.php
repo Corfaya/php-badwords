@@ -1,8 +1,9 @@
 <?php
-    $paragrafo = $_GET["paragrafo"];
+    $paragraph = $_GET["paragrafo"];
     $bad_word = $_GET["bad_word"];
-    $length = strlen($paragrafo);
-    var_dump($paragrafo, $length)
+    $new_paragraph = str_replace($bad_word, "***", $paragraph);
+    $length = strlen($new_paragraph);
+    var_dump($paragraph, $length);
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@
         <div class="row">
             <div class="col-12">
                 <h3>Il tuo testo:</h3>
-                <em class="mt-2"><?php echo $paragrafo ?></em>
+                <em class="mt-2"><?php echo $new_paragraph ?></em>
             </div>
             <div class="col-12">
                 <h3 class="fs-4 mt-4">La lunghezza del tuo testo è pari a: <span class="fs-5 fw-bold d-inline text-danger"><?php echo $length ?></span></h3>
